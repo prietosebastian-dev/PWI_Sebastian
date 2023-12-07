@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1>FORMULARIO</h1>
+    <hr/>
+    <form action="direccionEnvio" method="post">
+        <!-- Protocolo HTTP-> Metodo "post"-> Enviar info -->
+        <div>
+        <label for="nombre">Nombre y apellido</label>
+        <input type="text" id="nombre" name="nombreCompleto" required/>
+        </div>
+        <div>
+        <label for="pais" id="pais">Pais</label>
+        <select name="pais" id="pais">Pais
+            <option value="none">Seleccionar</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Paraguay">Paraguay</option>
+        </select>
+        </div>
+        <div>
+        <label for="email">Correo electronico</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com"/>
+        </div>
+        <div>
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="contraseña"/>
+        </div>
+        
+        <div>
+            <label>Ingrese los cursos a Inscribirse:</label>
+
+            <label for="html">HTML</label>
+            <input type="checkbox" id="html" value="HTML" name="curso"/>
+
+            <label for="css">CSS</label>
+            <input type="checkbox" id="css" value="CSS" name="curso"/>
+
+            <label for="react">REACT</label>
+            <input type="checkbox" id="react" value="REACT" name="curso" disabled/>
+
+            <label for="java">JAVA</label>
+            <input type="checkbox" id="java" value="JAVA" name="curso"/>
+
+        </div>
+        <div>
+            
+            <label>Ingrese el turno:</label>
+
+            <label for="mañana">Mañana</label>
+            <input type="radio" id="mañana" value="mañana" name="turno"/>
+
+            <label for="tarde">Tarde</label>
+            <input type="radio" id="tarde" value="tarde" name="turno"/>
+
+            <label for="noche">Noche</label>
+            <input type="radio" id="noche" value="noche" name="turno">
+        </div>
+        <label for="Comentarios" id="comentarios">Comentarios:
+        <textarea name="Comentarios" id="comentarios" maxlength="15" placeholder="Max. 10 caracteres"></textarea>
+        </label>
+        <input type="submit" value="Inscribir" id="boton-enviar">
+        <!--<button>Incribir</button>-->
+    
+
+        
+
+        
+        
+        
+        
+        
+
+    </form>
+<hr/>
+</body>
+</html>

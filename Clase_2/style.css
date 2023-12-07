@@ -1,0 +1,68 @@
+/* comentarios */
+/* selectores: manera de nombrar a una etiqueta.
+por etiqueta/.clase/#id
+
+selector{
+        propiedad:valor,
+        propiedad:valor,
+        propiedad: valor
+    }
+*/
+
+/* 
+*{
+    margin: 0;
+    padding: 0;
+    etc..
+    box-sizing: border-box; /*defino si quiero que en el tamaño de la etiqueta integre el padding y el border en todo el contenido html*/
+
+/* ( *{} ) Etiqueta universal aplica propiedades a todo el html y luego por jerarquia ir modificando a lo largo del codigo css; por class id etc */
+
+
+body{
+    background-color: rgb(64, 226, 43);
+    margin: 0;
+    /*le saco el margen a todo*/
+}
+#pTitle{
+    margin: 25px;
+    padding: 20px 20px;
+    background-color: black;
+    color:aliceblue;
+    height: 40px;
+    width: fit-content; /*ajusta al contenido */
+
+    /*border: groove antiquewhite 5px; o detallado: */
+    border-style: groove;
+    border-color: antiquewhite;
+    border-width: 5px;
+
+    box-sizing: content-box; /*defino si quiero que en el tamaño de la etiqueta integre el padding y el border*/
+}
+h2{
+    background-color:black;
+    color:whitesmoke;
+    width: fit-content;
+}
+#botonP{
+    color: brown;
+    background-color: aquamarine;
+
+}
+img{
+    width: 1000px;
+    height: 500px;
+}
+#titTurb{
+    background-color: aliceblue;
+    width: 160px;
+    height: 25px;
+}
+#turb{
+    background-color: aquamarine;
+    margin: 20px;
+}
+#resaltTurb{
+    background-color: hotpink;
+    padding: 3px;
+}

@@ -1,0 +1,106 @@
+<!-- comentarios-->
+
+<!-- HTML : Hyper Text Markup Lenguaje-->
+<!-- Etiquetas -> <nombre> 
+    dos tipos de etiquetas:
+- apertura y cierre <nombre>contenido </nombre>
+- cierre en si mismo <nombre />
+atributos -> informacion extra de una etiqueta. 
+nombreAtributo ="contenido"
+-->
+
+<!-- 
+    atajos
+    !+tab | !+enter | html5+enter -> estrutura inicial HTML
+    autoguardado "cntl+s"
+
+    SEO -> Motores de busqueda -> buenas practias
+    
+    ScreenReaders - lectores de pantallas -> accesibilidad
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./style.css">
+    <title>Meteorología aeronatica</title>
+</head>
+<body>
+    <!--Etiquetas semanticas-->
+    <h1 id="pTitle">METEOROLOGÍA AERONAUTICA</h1> <!--Utilizado para el titulo mas importante, recomiendan no mas de un h1 -->
+    <!-- Titulos : <h1></h1>,.. <h6></h6>
+    segun importancia del 1 al 6 -->
+    <h2>Los fenómenos meteorológicos y la aviación</h2>
+    <p>
+        La historia de la aeronáutica es la historia del entendimiento de la física de la atmósfera y de todos los fenómenos que ocurren en ella. Así como el hombre comprendió cómo operan las fuerzas que hacen posible la sustentación de las alas en una masa de aire, también observó y comprendió los fenómenos meteorológicos que pueden afectar a un avión y al confort de sus tripulaciones y pasajeros.
+    </p> <!--Parrafos-->
+    <p>
+        La meteorología aeronáutica es una rama de la meteorología que se enfoca en el estudio de las condiciones meteorológicas que afectan la aviación. Esta disciplina se encarga de proporcionar información meteorológica precisa y oportuna para garantizar la seguridad de los vuelos y la eficiencia de las operaciones aéreas.
+    </p>
+<h3>Existen diferentes tipos de fenomenos meteorologicos entre los que podemos encontrar:
+</h3>
+<br> <!--salto en linea. punto y aparte | no usar para generar espacios -->
+
+<!-- Listas-->
+<!-- Items de listas <li></li>-->
+
+<!-- Listas desorganizadas <<unorganize>> <ul></ul>-->
+
+
+<ul>
+    <li>Turbulencias</li>
+    <li>Actividad electrica</li>
+    <li>Granizo</li>
+    <li>Engelamiento</li>
+</ul>
+
+<!-- Listas organizadas <<organize>> <ol></ol>-->
+
+<!--
+<ol>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+</ol>
+-->
+
+<!--Funcionales-->
+
+<a href="http://www.google.com" target="_blank">Ir a google </a> <!--anchor | anclas necesitan un atributo | href="" : nos redirigen a paginas como a hojas o secciones de nuestro sitio
+
+atributo target -> redirigir hacia otro lado 
+target="_blank" redirige a pestaña nueva-->
+<br>
+<a href="./seconhtmlcode.html" target="_blank">Ir a hoja secundaria</a>
+
+<div><img src="./images/Avion y tormenta 03.jpg" alt="avion y tormenta"/></div>
+
+<div id="turb">
+<h3 id="titTurb">TURBULENCIAS</h3>
+
+<p>Las principales causas de turbulencia son: 
+    <ol>
+        <li>las corrientes convectivas, </li>
+        <li>Las obstrucciones en el flujo de viento, </li>
+        <li>La cortante de viento. </li>
+    </ol>
+    La <span id="resaltTurb">turbulencia</span> también ocurre en la estela de la aeronave, especialmente de gran 
+    porte, siempre que las superficies de sustentación ejerzan una fuerza 
+    ascensional (Turbulencia de estela). Puede darse simultáneamente cualquier 
+    combinación de estas causas. </p>
+</div>            
+
+<!-- Etiqueta de imagen <img/> no tiene apertura ni cierre | con atributo sourse "src" indicamos donde se encuentra la imagen
+atributo "alt" para accesibilidad | descripcion de imagen -->
+
+<button id="botonP">CLICK!</button>
+
+<!-- Estructurales-->
+<!-- <div></div> cambiar tamaños rellenos etc-->
+<!-- <span></span> ocupar el minimo espacio -->
+
+
+</body>
+</html>
