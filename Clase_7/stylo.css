@@ -1,0 +1,70 @@
+/* ANIMACIONES CON CSS*/
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    text-align: center;
+    width: 300px;
+    animation:mover 5s infinite;
+}
+.cont-padre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+.cubo{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: green;
+    margin: 2px solid black;
+    font-size: 25px;
+    font-weight: bold;
+}
+.translate:hover{
+    background-color: greenyellow;
+    transform:translate(-205px,0px) rotate(-45deg);
+    transition: all 3s;
+}
+
+.rotate{
+    background-color: lawngreen;
+    transform: rotate(45deg);
+    transition: 5s;
+}
+.rotate:active{
+    transform: (360deg);
+}
+.scale{
+    background-color: violet;
+    transform: scale(0.8);
+}
+.skew{
+    transform: skew(30deg,30deg);
+}
+.combinado:active{
+    background-color: pink;
+    transform: translateX(100px) rotate(80deg);
+    transition: all 2s;
+    }
+
+@keyframes mover{
+        0%{
+            transform: translate(500px);
+        }
+        20%{
+            transform: translate(300px,200px);
+            background-color: greenyellow;
+        }
+        45%{
+            transform: translate(100px) rotate(-45deg);
+            background-color: red;
+            border-radius: 35%;
+        }
+        100%{
+            background-color: aqua;
+            transform: scale(0.80);
+        }
+}
