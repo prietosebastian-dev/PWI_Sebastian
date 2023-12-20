@@ -19,6 +19,6 @@ input{
     justify-self: center;
 }
 #comentarios{
-    width: 100$;
+    width: 100%;
     grid-column: 2/3;
 }
